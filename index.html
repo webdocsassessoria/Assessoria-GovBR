@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+    
+<head>
+<meta charset="utf-8">
+    <title>GOV.BR</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon" href="favicon.png" type="image/png">
+</head>
+    
+<body>
+    <div class="tela">
+        <div class="pagina">
+            <div class="header">
+                <img src="logo gov.svg" alt="GOV.br" style="margin-right: auto;">
+                <div class="menu-paginas">
+                    <div class="paginas-opcoes">Órgãos do Governo</div>
+                    <div class="paginas-opcoes">Acesso à Informação</div>
+                    <div class="paginas-opcoes">Legislação</div>
+                    <div class="paginas-opcoes">Acessibilidade</div>
+                </div>
+                <div class="menu-extras">
+                    <i class="fa-solid fa-cookie-bite" style="color: #1351b4;"></i>
+                    <i class="fa-solid fa-circle-half-stroke" style="color: #1351b4;"></i>
+                    <img src="extras.svg" alt="Opções Extras">
+                </div>
+                <div class="usuario" id="trocaPerfil">
+                    <img src="perfil1.png" alt="Foto de Perfil" id="perfil-imagem">
+                    <div class="usuario-nome" id="perfil-nome">Chams Assessoria</div>
+                    <img src="seta.svg" alt="Seta">
+                </div>
+            </div>
+            <div class="linha1">
+                <div class="receita">
+                    <img src="menu.svg" alt="Menu">
+                    <div>Receita Federal</div>
+                </div>
+                <div class="pesquisa">
+                    <div class="pesquisa-texto">O que você procura?</div>
+                    <img src="pesquisa.svg" alt="Pesquisa">
+                </div>
+            </div>
+            <div class="linha2">
+                <img src="home.svg" alt="Home">
+                <img src="seta2.svg" alt="Seta2">
+                <div style="color: #1351B4; font-weight: 500;">Serviços</div>
+                <img src="seta2.svg" alt="Seta2">
+                <div style="color: #333333; font-weight: 600;">Auditoria Fiscal</div>
+            </div>
+            <div class="divisoria"></div>
+            <div class="empresa">
+                <img src="empresa.svg" alt="Empresa">
+                <input class="empresa-rs" placeholder="RAZÃO SOCIAL">
+                <div class="dados">
+                    <div class="natureza-juridica" id="displayNaturezaJuridica">Natureza Jurídica</div>
+                    <img src="seta3.svg" alt="SETA">
+                    <div class="cnpj" id="displayCNPJ">00.000.000/0000-00</div>
+                </div>
+            </div>
+            <div class="divisoria"></div>
+            <div class="area-cards">
+                <div class="card" 1>
+                    <img src="info.svg" alt="Info" style="position: absolute; top: 16px; right:16px">
+                    <div class="card-tipo">
+                        <img src="iconecard1.svg" alt="Ícone" style="height: 48px" id="card-i1" onclick="mudarSvg(this)">
+                        <input class="card-titulo" placeholder="Pago">
+                    </div>
+                    <div class="card-conteudo">
+                        <input class="card-info" placeholder="LINHA 1">
+                        <input class="card-info" placeholder="LINHA 2">
+                    </div>
+                </div>
+                <div class="card" id="card-2">
+                    <img src="info.svg" alt="Info" style="position: absolute; top: 16px; right:16px">
+                    <div class="card-tipo">
+                        <img src="iconecard1.svg" alt="Ícone" style="height: 48px" id="card-i2" onclick="mudarSvg(this)">
+                        <input class="card-titulo" placeholder="Pago">
+                    </div>
+                    <div class="card-conteudo">
+                        <input class="card-info" placeholder="LINHA 1">
+                        <input class="card-info" placeholder="LINHA 2" id="card2linha2">
+                    </div>
+                </div>
+                <div class="card" id="card-3">
+                    <img src="info.svg" alt="Info" style="position: absolute; top: 16px; right:16px">
+                    <div class="card-tipo">
+                        <img src="iconecard1.svg" alt="Ícone" style="height: 48px" id="card-i3" onclick="mudarSvg(this)">
+                        <input class="card-titulo" placeholder="Pago">
+                    </div>
+                    <div class="card-conteudo">
+                        <input class="card-info" placeholder="LINHA 1">
+                        <input class="card-info" placeholder="LINHA 2" id="card3linha2">
+                    </div>
+                </div>
+                <div class="card" id="card-4">
+                    <img src="info.svg" alt="Info" style="position: absolute; top: 16px; right:16px">
+                    <div class="card-tipo">
+                        <img src="iconecard1.svg" alt="Ícone" style="height: 48px" id="card-i4" onclick="mudarSvg(this)">
+                        <input class="card-titulo" placeholder="Pago">
+                    </div>
+                    <div class="card-conteudo">
+                        <input class="card-info" placeholder="LINHA 1">
+                        <input class="card-info" placeholder="LINHA 2" id="card4linha2">
+                    </div>
+                </div>
+                <div class="card" id="card-5">
+                    <img src="info.svg" alt="Info" style="position: absolute; top: 16px; right:16px">
+                    <div class="card-tipo">
+                        <img src="iconecard1.svg" alt="Ícone" style="height: 48px" id="card-i5" onclick="mudarSvg(this)">
+                        <input class="card-titulo" placeholder="Pago">
+                    </div>
+                    <div class="card-conteudo">
+                        <input class="card-info" placeholder="LINHA 1">
+                        <input class="card-info" placeholder="LINHA 2" id="card5linha2">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="config" class="ocultar-na-impressao">
+            <div class="config0">
+                <input id="inputNaturezaJuridica" type="text" placeholder="Natureza Jurídica" class="config-dados">
+                <input id="inputCNPJ" type="text" placeholder="CNPJ" class="config-dados">
+            </div>
+            <div class="config1">
+                <div class="config-head">CARD 01 (fixo)</div>
+                <div class="switch">
+                    <span id="switch-descricao1">Linha 02</span>
+                    <label class="material-switch">
+                        <input id="linha2-switch" type="checkbox">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="config2">
+                <div class="switch">
+                    <span id="switch-descricao2"><strong>CARD 02</strong></span>
+                    <label class="material-switch">
+                        <input id="switch-principal-2" type="checkbox" class="switch-principal">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-dependente" id="switch-dependente-container-2">
+                    <span id="switch-descricao6">Linha 02</span>
+                    <label class="material-switch">
+                        <input id="switch-dependente-2" type="checkbox" class="switch-dependente">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="config3">
+                <div class="switch">
+                    <span id="switch-descricao3"><strong>CARD 03</strong></span>
+                    <label class="material-switch">
+                        <input id="switch-principal-3" type="checkbox" class="switch-principal">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-dependente" id="switch-dependente-container-3">
+                    <span id="switch-descricao7">Linha 02</span>
+                    <label class="material-switch">
+                        <input id="switch-dependente-3" type="checkbox" class="switch-dependente">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="config4">
+                <div class="switch">
+                    <span id="switch-descricao4"><strong> CARD 04</strong></span>
+                    <label class="material-switch">
+                        <input id="switch-principal-4" type="checkbox" class="switch-principal">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-dependente" id="switch-dependente-container-4">
+                    <span id="switch-descricao8">Linha 02</span>
+                    <label class="material-switch">
+                        <input id="switch-dependente-4" type="checkbox" class="switch-dependente">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+            </div>
+            <div class="config5">
+                <div class="switch">
+                    <span id="switch-descricao5"><strong>CARD 05</strong></span>
+                    <label class="material-switch">
+                        <input id="switch-principal-5" type="checkbox" class="switch-principal">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+                <div class="switch-dependente" id="switch-dependente-container-5">
+                    <span id="switch-descricao9">Linha 02</span>
+                    <label class="material-switch">
+                        <input id="switch-dependente-5" type="checkbox" class="switch-dependente">
+                        <span class="material-slider round"></span>
+                    </label>
+                </div>
+            </div>
+		<button id="botao-imprimir">EXPORTAR</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
